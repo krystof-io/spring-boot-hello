@@ -1,0 +1,12 @@
+name: Deployment Unit Branch Build
+
+on:
+  workflow_dispatch:
+  workflow_call:
+  push:
+    branches:
+      - '**'
+jobs:
+  top-level-deployment-unit:
+    uses: krystof-io/common-workflows/.github/workflows/top-level-deployment-unit-build.yaml@main
+    secrets: inherit
