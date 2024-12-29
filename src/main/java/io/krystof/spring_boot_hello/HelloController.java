@@ -30,7 +30,8 @@ public class HelloController {
         StringBuilder sb = new StringBuilder();
 
         sb.append("<html><body><pre>");
-        sb.append("Greetings ").append(request.getRemoteAddr()).append("!\n");
+        sb.append("Greetings ").append(request.getRemoteAddr())
+                .append(" from ").append(buildProperties.getVersion()).append("!\n");
         sb.append("</pre></body></html>");
 
         return sb.toString();
