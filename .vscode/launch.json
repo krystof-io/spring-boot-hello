@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringBootHelloApplication<spring-boot-hello>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "io.krystof.spring_boot_hello.SpringBootHelloApplication",
+            "projectName": "spring-boot-hello",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
