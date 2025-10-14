@@ -35,6 +35,7 @@ jobs:
       # heap_size: '2g'                       # Default: '512m'
       # maven_profiles: 'prod,extra'          # Default: ''
       
+    secrets: inherit
     # secrets:
     #   IMAGE_REGISTRY_USERNAME: ${{ secrets.IMAGE_REGISTRY_USERNAME }}
     #   IMAGE_REGISTRY_PASSWORD: ${{ secrets.IMAGE_REGISTRY_PASSWORD }}
