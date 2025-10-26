@@ -37,20 +37,3 @@ jobs:
       
     secrets: inherit
     # secrets:
-    #   IMAGE_REGISTRY_USERNAME: ${{ secrets.IMAGE_REGISTRY_USERNAME }}
-    #   IMAGE_REGISTRY_PASSWORD: ${{ secrets.IMAGE_REGISTRY_PASSWORD }}
-    #   MAVEN_REPO_USERNAME: ${{ secrets.MAVEN_REPO_USERNAME }}
-    #   MAVEN_REPO_PASSWORD: ${{ secrets.MAVEN_REPO_PASSWORD }}
-    #   SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-    #   SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-    #   CICD_TOKEN: ${{ secrets.CICD_TOKEN }}
-    #   CICD_USER_EMAIL: ${{ secrets.CICD_USER_EMAIL }}
-    #   CICD_USER_NAME: ${{ secrets.CICD_USER_NAME }}
-
-# That's it! The shared workflow handles:
-# - Building and testing your application
-# - Running integration tests (on main branch)
-# - Running SonarQube analysis (on main branch)
-# - Building Docker image with shared Dockerfile
-# - Deploying to dev environment (feature branches and main)
-# - Creating deployment PRs for prod (tags)
