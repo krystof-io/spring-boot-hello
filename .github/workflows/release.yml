@@ -36,7 +36,7 @@ jobs:
       # Required: Release configuration
       release_version: ${{ github.event.inputs.release_version }}
       next_development_version: ${{ github.event.inputs.next_development_version }}
-      dry_run: ${{ github.event.inputs.dry_run }}
+      dry_run: ${{ github.event.inputs.dry_run == 'true' }}
       
       # Optional: Customize as needed (these show non-default values)
       # maven_profiles: 'prod,extra'          # Default: ''
