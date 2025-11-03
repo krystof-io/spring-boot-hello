@@ -9,7 +9,7 @@
     </parent>
     <groupId>io.krystof</groupId>
     <artifactId>spring-boot-hello</artifactId>
-    <version>1.0.10-SNAPSHOT</version>
+    <version>1.0.11-SNAPSHOT</version>
     <name>spring-boot-hello</name>
     <description>spring-boot-hello</description>
     <scm>
