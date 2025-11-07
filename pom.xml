@@ -13,9 +13,9 @@
     <name>spring-boot-hello</name>
     <description>spring-boot-hello</description>
     <scm>
-        <connection>scm:git:https://git.krystof.io/krystof.io/spring-boot-hello.git</connection>
-        <developerConnection>scm:git:https://git.krystof.io/krystof.io/spring-boot-hello.git</developerConnection>
-        <url>https://git.krystof.io/krystof.io/spring-boot-hello.git</url>
+        <connection>scm:git:https://github.com/krystof-io/spring-boot-hello.git</connection>
+        <developerConnection>scm:git:https://github.com/krystof-io/spring-boot-hello.git</developerConnection>
+        <url>https://github.com/krystof-io/spring-boot-hello.git</url>
         <tag>HEAD</tag>
     </scm>
     <properties>
