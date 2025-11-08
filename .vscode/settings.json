@@ -2,5 +2,6 @@
     "sonarlint.connectedMode.project": {
         "connectionId": "MySonarQube",
         "projectKey": "io.krystof:spring-boot-hello"
-    }
+    },
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
