@@ -1,6 +1,8 @@
 package io.krystof.spring_boot_hello;
 
 import jakarta.servlet.http.HttpServletRequest;
+import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.info.BuildProperties;
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@Slf4j
 public class HelloController {
 
     private final Environment environment;
@@ -26,6 +29,8 @@ public class HelloController {
     @GetMapping("/")
     public String index(@RequestParam(name = "delayInMs", required = false, defaultValue = "0") int delayInMs, HttpServletRequest request)  {
         StringBuilder sb = new StringBuilder();
+        
+        log.info("Received request with delay {} ms from {}", delayInMs, request.getRemoteAddr());
 
         sb.append("<html><body><pre>");
         sb.append("Greetings ").append(request.getRemoteAddr())
