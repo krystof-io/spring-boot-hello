@@ -5,6 +5,10 @@ on:
     tags:
       - 'v*'
 
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   promote-to-prod:
     # Call the shared workflow for Java applications
