@@ -25,7 +25,8 @@ on:
 
 permissions:
   contents: write
-
+  pull-requests: write
+  
 jobs:
   maven-release:
     # Call the shared workflow for Maven releases
