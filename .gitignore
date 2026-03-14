@@ -173,3 +173,7 @@ fabric.properties
 
 /.idea/*
 /target*
+
+# Environment files
+.env
+.env.local

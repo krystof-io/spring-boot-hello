@@ -1,30 +1,20 @@
 package io.krystof.spring_boot_hello;
 
 import jakarta.servlet.http.HttpServletRequest;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.info.BuildProperties;
-import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequiredArgsConstructor
 @Slf4j
 public class HelloController {
 
-    private final Environment environment;
-    private final String workdir;
-    BuildProperties buildProperties;
-
-    @Autowired
-    public HelloController(Environment environment, @Value("${workdir}") String workdir, BuildProperties buildProperties) {
-        this.environment = environment;
-        this.workdir = workdir;
-        this.buildProperties = buildProperties;
-    }
+    private final BuildProperties buildProperties;
 
     @GetMapping("/")
     public String index(@RequestParam(name = "delayInMs", required = false, defaultValue = "0") int delayInMs, HttpServletRequest request)  {

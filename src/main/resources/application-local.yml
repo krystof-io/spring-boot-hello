@@ -1,0 +1,4 @@
+logging:
+  level:
+    io.krystof: DEBUG
+    org.springframework.web: DEBUG
